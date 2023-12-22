@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="newReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="541e2a88-0871-4ed0-b756-f58329f665ae">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="designation" class="java.lang.String"/>
+	<field name="code" class="java.lang.String"/>
+	<field name="shortname" class="java.lang.String"/>
+	<field name="createdon" class="java.lang.String"/>
+	<field name="modifiedon" class="java.lang.String"/>
+	<title>
+		<band height="105" splitType="Stretch">
+			<staticText>
+				<reportElement x="226" y="0" width="114" height="18" uuid="b28530fb-fd55-42fe-a1dd-c43075605687"/>
+				<textElement>
+					<font fontName="Constantia" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Designation Slip]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="162" y="18" width="247" height="30" uuid="ba7ec8e6-da63-479e-9a43-fb9d55106db9"/>
+				<textElement>
+					<font fontName="Ebrima" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[M.D. ENTERPRISES PVT. LTD. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="135" y="48" width="302" height="19" uuid="9daf85b6-b42c-4fa5-ad90-d89c7844a6ee"/>
+				<textElement>
+					<font fontName="Courier New" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[58/53, J.J. MARKET GENERAL GANJ KANPUR 208001]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="151" y="67" width="270" height="18" uuid="386f0b52-6502-468a-b0a5-b1ad55fc3202"/>
+				<textElement>
+					<font fontName="Courier New" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[PHONE : 0512 -2354779   9598775512]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="119" y="85" width="351" height="18" uuid="0d8cea0d-7350-4631-a9c2-e2548e7dfd0b"/>
+				<textElement>
+					<font fontName="Courier New" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[[  ] ORIGINAL [  ]DUPLICATE  [  ] TRIPLICATE]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="104" width="561" height="1" uuid="4a955c1d-dd78-4726-89aa-43343e51bc18"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="475" y="-16" width="79" height="19" uuid="d2ce48b6-ad4e-41bf-9ec0-571f854268bd"/>
+				<textElement>
+					<font fontName="Courier New" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.text.SimpleDateFormat("dd/MM/yyyy").format(new java.util.Date())]]></textFieldExpression>
+				<patternExpression><![CDATA[new java.text.SimpleDateFormat("dd/MM/yyyy").format(new java.util.Date())]]></patternExpression>
+			</textField>
+			<staticText>
+				<reportElement x="435" y="-16" width="40" height="16" uuid="72bb1099-8bee-4e1b-a60c-e2049a4f3790"/>
+				<textElement>
+					<font fontName="Courier New" size="12"/>
+				</textElement>
+				<text><![CDATA[DATE:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="-19" width="224" height="19" uuid="36986d5e-b1f1-49dc-a665-59e30892f77a"/>
+				<textElement>
+					<font fontName="Courier New" size="12"/>
+				</textElement>
+				<text><![CDATA[GST NO  :  09AEKPG4383G2ZA]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="71" splitType="Stretch">
+			<textField>
+				<reportElement x="80" y="21" width="110" height="18" uuid="142a61e1-ec04-4b17-b2e3-246f5694b06d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{designation}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="80" y="0" width="110" height="18" uuid="d696ce97-72af-4e06-af59-0e0205c6f866">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Constantia" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DESIGNATION]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="-1" width="79" height="20" uuid="bd564ecf-4d78-4191-a15f-bf922232ad5d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Constantia" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CODE]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="21" width="79" height="18" uuid="5ac5eed2-5c6a-4c7d-8997-1e51003b94dd"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{code}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="19" width="555" height="1" uuid="382170a6-b385-4ca4-b265-514f91cabb14"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="191" y="-1" width="99" height="19" uuid="ad715a15-c03c-457e-9d87-e79f16d7fd3b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Constantia" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SHORT NAME]]></text>
+			</staticText>
+			<line>
+				<reportElement x="79" y="3" width="1" height="13" uuid="00f82bcf-d161-4183-874f-ffe184ca64c6"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="79" y="21" width="1" height="13" uuid="9d59a19c-2a4c-4880-86bb-6ffb59ac192d"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="190" y="3" width="1" height="13" uuid="d1b9c951-4569-4af5-8e92-b70db5f83457"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="190" y="21" width="1" height="13" uuid="1a5161bd-8ecf-4140-9421-cf272134ae72"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="191" y="21" width="99" height="18" uuid="2ab48975-f838-4969-ac57-4167aac81046"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{shortname}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="290" y="3" width="1" height="13" uuid="6f87fd21-415f-440a-96a3-8c4cab6c97bc"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="290" y="21" width="1" height="13" uuid="8bb8cb61-52fd-4a4e-9228-566806949465"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="292" y="0" width="126" height="19" uuid="078c6257-9736-481c-8532-11d8291080df"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Constantia" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CREATED ON D&T]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="419" y="0" width="143" height="19" uuid="ac8404ee-dfec-4fa5-b2f0-b39b5394eb3d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Constantia" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MODIFIED ON D&T]]></text>
+			</staticText>
+			<line>
+				<reportElement x="418" y="3" width="1" height="13" uuid="18c863f6-95d7-4397-bb6d-e5baf51f2aa3"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="292" y="20" width="126" height="19" uuid="dfa28212-7563-45be-90c2-e37b40518aaf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{createdon}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="418" y="21" width="1" height="13" uuid="3957dc46-81bf-47c5-a742-cac7698cc32a"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="419" y="20" width="143" height="18" uuid="a1c8f141-e09f-407c-b081-1c8db9403a44"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{modifiedon}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="39" width="559" height="1" uuid="59311ea9-0d6e-40d4-8abc-7cb9b071a9c7"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+		</band>
+	</pageHeader>
+	<summary>
+		<band height="30">
+			<staticText>
+				<reportElement x="433" y="10" width="126" height="20" uuid="1919898b-b5fa-401e-b921-2c99e527ab9b"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[FOR M.D. ENTERPRISES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="384" y="-20" width="170" height="20" uuid="cb1c6d28-9a14-4ff9-8cea-5157611ba465"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[APPROVED BY - [                            ]]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>
